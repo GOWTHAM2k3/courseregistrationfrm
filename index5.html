@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="/Course Registration Form/style.css" />
+    <link rel="icon" href="/Course Registration Form/google-formsimg.png" />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form style="width: fit-content" action="/response.html">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label class="fname" for="fullname">Full Name</label></td>
+
+            <td>
+              <input
+                type="text"
+                placeholder="EX:XYZ"
+                maxlength="50"
+                minlength="3"
+                required
+              />
+              <p class="para">Enter the full name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Surname">Surname</label></td>
+            <td>
+              <input type="text" placeholder="EX:ABC" optional />
+              <p class="para">Enter the name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobilenum">Mobile Number</label></td>
+            <td>
+              <input type="tel" placeholder="+91 65412123" required />
+              <p class="para">Enter Mobile Number</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input type="email" placeholder="xyz@email" required />
+              <p class="para">Enter your Email</p>
+              <img src="/Course Registration Form/wrong.png" alt="invalid" />
+              <img src="/Course Registration Form/correct.png" alt="valid" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input type="password" placeholder="min 5 characters" required />
+              <p class="para">Enter Your Password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Confirm Password</label></td>
+            <td><input type="password" required /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">DOB</label></td>
+            <td><input type="date" optional /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <input name="gender" type="radio" value="Male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" value="Female" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" value="Others" />
+              <label for="others">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Select Country</label></td>
+            <td>
+              <select name="" id="">
+                <option value="selectcountry">----Select country---</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="uploadpicture">Upload Picture</label></td>
+            <td><input type="file" multiple /></td>
+          </tr>
+          <tr>
+            <td>
+              <button class="reset">Reset</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+    <form style="width: fit-content">
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label for="selectcourse">Select Course</label></td>
+            <td>
+              <select name="" id="">
+                <option value="selectcourse">----Select course---</option>
+                <option value="java">Java Full Stack</option>
+                <option value="python">Python Django</option>
+                <option value="frontend">Frontend Development</option>
+                <option value="c++">C++</option>
+                <option value="datastructures">
+                  Data Structures and Algorithms
+                </option>
+                <option value="backend">Backend Development</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="deliverymode">Delivery Mode</label></td>
+            <td>
+              <input type="checkbox" name="deliverymode" value="online" />
+              <label for="online">Online</label>
+              <input type="checkbox" name="deliverymode" value="offline" />
+              <label for="offline">Offline</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="comments">Comments</label></td>
+          </tr>
+          <tr>
+            <td>
+              <textarea
+                style="resize: none"
+                rows="3"
+                name="feedback"
+                id=""
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><button type="submit">Submit</button></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

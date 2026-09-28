@@ -1,0 +1,123 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: black;
+  color: aliceblue;
+}
+h1 {
+  background-color: rgb(122, 7, 230);
+  text-align: center;
+  width: 500px;
+  margin: 5px auto;
+  padding: 5px 15px;
+  background: #d105ff;
+  background: linear-gradient(
+    90deg,
+    rgb(197, 27, 106) 0%,
+    rgba(196, 132, 92, 0.589) 100%,
+    rgb(216, 196, 14) 58%
+  );
+  border: 3px ridge #053bff;
+  border-radius: 10px;
+  box-shadow: 3px 4px 15px rgb(201, 86, 115);
+  color: rgb(4, 37, 83);
+  margin-top: 10px;
+  font-weight: 2000000px;
+}
+form {
+  margin: 30px auto;
+  border: 3px ridge rgb(6, 50, 73);
+  box-shadow: 3px 2px 30px #6f87dc;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+legend {
+  color: rgb(7, 211, 61);
+}
+fieldset {
+  margin: 5px auto;
+  padding-right: 10px;
+  border: dashed #6f87dc;
+  border-radius: 10px;
+  margin-right: 0px;
+}
+table {
+  margin: 2px auto;
+}
+label {
+  margin: auto;
+  width: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  color: #ff8c08;
+}
+input {
+  padding-left: auto;
+  margin-left: 100px;
+  width: auto;
+  padding-right: 1px;
+}
+.para {
+  color: blanchedalmond;
+  margin-left: 110px;
+  margin-top: 0%;
+  font-size: small;
+  box-shadow: 2px 3px 8px #13aa6e;
+  width: fit-content;
+  display: none;
+}
+input[type="text"]:focus + p {
+  display: inline;
+}
+input[type="tel"]:focus + p {
+  display: inline;
+}
+input[type="email"]:focus + p {
+  display: inline;
+}
+tr,
+td {
+  width: 70px;
+}
+input[type="radio"] {
+  margin-left: 1px;
+}
+input[type="password"]:focus + p {
+  display: inline;
+}
+button {
+  width: 100px;
+  margin-left: 280px;
+  margin-top: 30px;
+  box-shadow: 2px 3px 8px #d105ff;
+  font-size: 17px;
+}
+textarea {
+  width: 300px;
+  box-shadow: 2px 3px 9px #ff8c08;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  border-radius: 10px;
+}
+textarea:checked {
+  display: inline;
+}
+input[type="email"] ~ img {
+  width: 18px;
+  display: none;
+}
+input[type="email"]:checked + img {
+  display: inline;
+}
